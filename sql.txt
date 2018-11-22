@@ -1,0 +1,20 @@
+drop table Person
+
+create table Person (
+PersonId int identity(1,1),
+FullName varchar(100),
+Gender char(1),
+PersonRole varchar(10)
+)
+
+insert into Person (FullName,Gender,PersonRole)values('John Tan','M','STUDENT');
+insert into Person (FullName,Gender,PersonRole)values('Richard Lee','M','STUDENT');
+insert into Person (FullName,Gender,PersonRole)values('Mary Song','F','STUDENT');
+insert into Person (FullName,Gender,PersonRole)values('Loo Mei Ling','F','STAFF');
+insert into Person (FullName,Gender,PersonRole)values('Jeff Kao','M','STAFF');
+insert into Person (FullName,Gender,PersonRole)values('David Lee','M','PARENT');
+select * from Person;
+
+
+
+
